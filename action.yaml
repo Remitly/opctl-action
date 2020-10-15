@@ -1,0 +1,12 @@
+name: Opctl
+description: Perform an opctl op via an Action
+branding:
+  icon: 'box'
+  color: 'purple'
+runs:
+  using: 'docker'
+  image: 'docker://opctl/opctl:0.1.41-dood'
+  args:
+    - 'opctl'
+    - 'run'
+    - ${{ inputs.op }}
