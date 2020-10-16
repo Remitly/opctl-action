@@ -3,6 +3,10 @@ description: Perform an opctl op via an Action
 branding:
   icon: 'box'
   color: 'purple'
+inputs:
+  op:
+    description: 'Op name to run'
+    required: true
 runs:
   using: 'docker'
   image: 'docker://opctl/opctl:0.1.41-dood'
