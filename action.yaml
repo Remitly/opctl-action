@@ -9,7 +9,7 @@ inputs:
     required: true
 runs:
   using: 'docker'
-  image: 'docker://opctl/opctl:0.1.41-dood'
+  image: 'docker://opctl/opctl:0.1.45-dood'
   args:
     - 'opctl'
     - 'run'
